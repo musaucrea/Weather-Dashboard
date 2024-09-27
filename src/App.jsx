@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
-//import About from './About';
 
 function Weather() {
   const [city, setCity] = useState('');
