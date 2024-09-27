@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 
 function Weather() {
@@ -61,26 +60,8 @@ function Weather() {
   );
 }
 
-function About() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-[#113355] via-[#4A90E2] to-[#FFA500] flex items-center justify-center">
-      <h1 className="text-white text-4xl font-bold">About the Weather Dashboard</h1>
-    </div>
-  );
-}
+export default Weather;
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Weather />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
 
 
 
